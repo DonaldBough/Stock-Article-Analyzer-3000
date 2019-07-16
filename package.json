@@ -1,0 +1,12 @@
+{
+  "name": "Stock-Article-Analyzer-3000",
+  "version": "1.0.0",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "latest",
+    "rss-parser": "^3.7.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
