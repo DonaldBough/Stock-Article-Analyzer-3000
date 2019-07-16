@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f496319-da7b-488e-be8c-a616fb959b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/node_modules/RSS-Reader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/author-predictions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/author-predicitions.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/small-XML-example.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/author-predictions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/author-predictions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/author-predicitions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/author-predicitions.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/author-predicitions.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state relative-caret-position="423">
+              <caret line="73" column="56" lean-forward="true" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/author-predictions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="286">
+              <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -63,6 +63,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/test/main-test.js" />
+        <option value="$PROJECT_DIR$/test/small-RSS-example.xml" />
         <option value="$PROJECT_DIR$/src/author-predictions.js" />
         <option value="$PROJECT_DIR$/test/author-predicitions.test.js" />
       </list>
@@ -73,18 +74,6 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-        <option value="$PROJECT_DIR$/.idea/Stock-Article-Analyzer-3000.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
@@ -130,6 +119,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.6.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -156,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.AnalyzeAuthorPredictions">
+  <component name="RunManager" selected="Mocha.AuthorPredictionsTests">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -286,6 +276,21 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="AuthorPredictionsTests" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/author-predicitions.test.js</test-file>
+      <test-names>
+        <name value="AuthorPredictionsTests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Main.says hi to Shraav" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options>--experimental-modules</node-options>
@@ -336,13 +341,14 @@
       <item itemvalue="Mocha.AnalyzeAuthorStockPredictions" />
       <item itemvalue="npm.test" />
       <item itemvalue="Mocha.AnalyzeAuthorPredictions" />
+      <item itemvalue="Mocha.AuthorPredictionsTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.AuthorPredictionsTests" />
         <item itemvalue="Mocha.AnalyzeAuthorPredictions" />
         <item itemvalue="Mocha.AnalyzeAuthorStockPredictions" />
         <item itemvalue="npm.test" />
-        <item itemvalue="Mocha.Main.says hi to Shraav" />
         <item itemvalue="Mocha.Main.says hi to Shraav" />
       </list>
     </recent_temporary>
@@ -357,44 +363,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563031901336</updated>
-      <workItem from="1563031902707" duration="8953000" />
+      <workItem from="1563031902707" duration="12949000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 39m 44s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 50m 00s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 41m 46s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 04s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 42m 51s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 13s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 42m 58s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 48s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 43m 13s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 54m 48s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 44m 11s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 55m 16s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 47m 25s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 00s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 49m 42s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 20s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 50m 08s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 32s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AnalyzeAuthorPredictions - 2019.07.15 at 23h 50m 33s.xml">
-      <configuration name="AnalyzeAuthorPredictions" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 35s.xml">
+      <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8953000" />
+    <option name="totallyTimeSpent" value="12949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -407,7 +413,7 @@
       <window_info anchor="bottom" id="Terminal" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38163266" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -420,24 +426,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/author-predictions.js</url>
-          <line>25</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test/author-predicitions.test.js</url>
-          <line>9</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -457,17 +445,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/RSS-article.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/small-XML-example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="true" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/author-predictions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="286">
+          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/author-predicitions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="423">
+          <caret line="73" column="56" lean-forward="true" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
         </state>
       </provider>
     </entry>
