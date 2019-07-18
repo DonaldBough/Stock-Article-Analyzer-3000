@@ -1,21 +1,28 @@
 'use strict';
 
-let RssParser = require('rss-parser');
-let fs = require('fs');
-let path = require('path');
+const NaturalLanguageUnderstandingV1 = require('ibm-watson/natural-language-understanding/v1.js');
+const ibmCredentials = require('./ibm-credentials.js');
+const RssParser = require('rss-parser');
+const fs = require('fs');
+const path = require('path');
 
 
 module.exports = class AuthorPredictions {
-  getPredictions(dataSource, dataLocation) {
+  async getPredictions(articleDataSource, dataLocation) {
     try {
-      switch (dataSource) {
+      let predictions;
+
+      switch (articleDataSource) {
         case DataSource.SEEKING_ALPHA_RSS_FEED :
-          return this._getAuthorRSSPredictions(dataLocation);
+          predictions = await this._getAuthorRSSPredictions(dataLocation);
         case DataSource.SEEKING_ALPHA_RSS_XML_FILE :
-          return this._getAuthorRSSPredictions(dataLocation, true);
+          predictions = await this._getAuthorRSSPredictions(dataLocation, true);
         default:
-          return;
+          predictions = null;
       }
+      predictions = await this._getArticleWillGoUpPredictions(predictions);
+
+      return predictions;
     }
     catch(error) {
       throw error;
@@ -47,6 +54,24 @@ module.exports = class AuthorPredictions {
 
   _getXMLFileAsString(filePath) {
     return fs.readFileSync(path.join(__dirname, filePath), 'utf8');
+  }
+
+  async _getArticleWillGoUpPredictions(predictions) {
+    const naturalLanguageUnderstanding = new NaturalLanguageUnderstandingV1({
+      version: '2019-07-12',
+      iam_apikey: ibmCredentials.NATURAL_LANGUAGE_UNDERSTANDING_IAM_APIKEY,
+      url: ibmCredentials.NATURAL_LANGUAGE_UNDERSTANDING_URL
+    });
+
+    const analyzeParams = {
+      'url': 'https://seekingalpha.com/article/4275421-american-eagle-outfitters-thriving-retail-apocalypse',
+      'features': {
+        'sentiment': {}
+      }
+    };
+
+    let analysisResults = await naturalLanguageUnderstanding.analyze(analyzeParams);
+    console.log(JSON.stringify(analysisResults, null, 2));
   }
 };
 

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "chai": "^4.2.0",
+    "ibm-watson": "^4.2.4",
     "mocha": "latest",
     "rss-parser": "^3.7.2"
   },
