@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f496319-da7b-488e-be8c-a616fb959b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/small-XML-example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data-source.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/author-predictions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/author-predictions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/author-predicitions.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/author-predicitions.test.js" afterDir="false" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/author-predicitions.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="73" column="56" lean-forward="true" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+            <state relative-caret-position="389">
+              <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/author-predictions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+            <state relative-caret-position="474">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -49,6 +49,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>async</find>
+      <find>getPredictions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,6 +65,11 @@
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/test/main-test.js" />
         <option value="$PROJECT_DIR$/test/small-RSS-example.xml" />
+        <option value="$PROJECT_DIR$/src/api-keys.js" />
+        <option value="$PROJECT_DIR$/src/ibm-credentials.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/datasource.js" />
+        <option value="$PROJECT_DIR$/src/data-source.js" />
         <option value="$PROJECT_DIR$/src/author-predictions.js" />
         <option value="$PROJECT_DIR$/test/author-predicitions.test.js" />
       </list>
@@ -122,7 +128,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.6.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -130,6 +136,9 @@
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -236,16 +245,6 @@
       <Host>localhost</Host>
       <Port>5050</Port>
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="AnalyzeAuthorPredictions" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -288,6 +287,38 @@
       <test-file>$PROJECT_DIR$/test/author-predicitions.test.js</test-file>
       <test-names>
         <name value="AuthorPredictionsTests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorPredictionsTests.gets the authors prediction for a stock from an article" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/author-predicitions.test.js</test-file>
+      <test-names>
+        <name value="AuthorPredictionsTests" />
+        <name value="gets the authors prediction for a stock from an article" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthorPredictionsTests.throws when no url is passed in" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/author-predicitions.test.js</test-file>
+      <test-names>
+        <name value="AuthorPredictionsTests" />
+        <name value="throws when no url is passed in" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -339,17 +370,18 @@
     <list>
       <item itemvalue="Mocha.Unnamed" />
       <item itemvalue="Mocha.AnalyzeAuthorStockPredictions" />
-      <item itemvalue="npm.test" />
       <item itemvalue="Mocha.AnalyzeAuthorPredictions" />
       <item itemvalue="Mocha.AuthorPredictionsTests" />
+      <item itemvalue="Mocha.AuthorPredictionsTests.gets the authors prediction for a stock from an article" />
+      <item itemvalue="Mocha.AuthorPredictionsTests.throws when no url is passed in" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Mocha.AuthorPredictionsTests" />
+        <item itemvalue="Mocha.AuthorPredictionsTests.throws when no url is passed in" />
+        <item itemvalue="Mocha.AuthorPredictionsTests.gets the authors prediction for a stock from an article" />
         <item itemvalue="Mocha.AnalyzeAuthorPredictions" />
         <item itemvalue="Mocha.AnalyzeAuthorStockPredictions" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Mocha.Main.says hi to Shraav" />
       </list>
     </recent_temporary>
   </component>
@@ -363,44 +395,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563031901336</updated>
-      <workItem from="1563031902707" duration="12949000" />
+      <workItem from="1563031902707" duration="21856000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 50m 00s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 10m 18s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 04s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 10m 33s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 13s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 10m 57s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 51m 48s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 15m 41s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 54m 48s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 19m 03s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 55m 16s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 20m 13s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 00s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 24m 54s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 20s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 27m 13s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 32s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 27m 26s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AuthorPredictionsTests - 2019.07.16 at 07h 57m 35s.xml">
+    <history-entry file="AuthorPredictionsTests - 2019.07.18 at 22h 27m 29s.xml">
       <configuration name="AuthorPredictionsTests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12949000" />
+    <option name="totallyTimeSpent" value="21856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -409,7 +441,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32959184" />
       <window_info anchor="bottom" id="Terminal" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -426,6 +458,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -445,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RSS-article.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/small-XML-example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -459,17 +487,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/api-keys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="87" selection-start-line="1" selection-start-column="87" selection-end-line="1" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ibm-credentials.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ibm-credentials.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RSS-article.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data-source.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+          <folding>
+            <element signature="e#26#117#0" />
+            <element signature="e#39#61#0" />
+            <element signature="e#1339#1412#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/author-predictions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="48" column="3" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+        <state relative-caret-position="474">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/author-predicitions.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="73" column="56" lean-forward="true" selection-start-line="73" selection-start-column="56" selection-end-line="73" selection-end-column="56" />
+        <state relative-caret-position="389">
+          <caret line="75" column="53" lean-forward="true" selection-start-line="75" selection-start-column="53" selection-end-line="75" selection-end-column="53" />
         </state>
       </provider>
     </entry>
